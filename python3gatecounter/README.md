@@ -15,20 +15,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Connect Raspberry Pi to PIR Sensor
 The PIR Sensor has three pins, and these three pins will be connected to the Raspberry Pi using the 3 female-female jumper wires.
 
@@ -46,14 +32,11 @@ https://pinout.xyz is also a good resource for locating where each pin is.
 
 Start plugging in the jumper wires connected to the PIR sensor to the Raspberry Pi as indicated in the chart below:
 
-PIR Sensor
-Raspberry Pi
-GND
-Ground (Pin 06)
-V+ (power positive pin)
-3.3v (Pin 01)
-S (signal pin)
-GPIO07 (Pin 26)
+| PIR Sensor  | Raspberry Pi |
+| ------------- | ------------- |
+| GND  | Ground (Pin 06)  |
+| V+ (power positive pin)  | 3.3v (Pin 01)  |
+| S (signal pin)  | GPIO07 (Pin 26)  |
 
 
 The Raspberry Pi should look like this:
