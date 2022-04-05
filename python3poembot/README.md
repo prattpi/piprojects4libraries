@@ -22,7 +22,7 @@ To start the printer project, the micro SD card for the Raspberry Pi must be rei
 
 Scroll down and select Raspberry Pi OS (Legacy), as seen in the screenshot below.
 
-<img src="https://i.ibb.co/CpjmG7w/unnamed.png">
+<img src = "https://github.com/prattpi/piprojects4libraries/blob/6f3ada18c670631ee8294c51b201f979d2f8932d/python3poembot/images/68747470733a2f2f692e6962622e636f2f43706a6d4737772f756e6e616d65642e706e67.png">
 
 Install the Raspberry Pi OS (Legacy) onto your micro SD card.
 
@@ -33,13 +33,13 @@ If you would like to add wifi information, enable SSH, or customize the setup of
 
 Connect the printer’s jumper wires to your Raspberry Pi as referenced in the chart below.
 
-<img src="https://i.ibb.co/6YXMKS3/raspberry-pi-gpio-diagram.png"/>
+<img src="https://github.com/prattpi/piprojects4libraries/blob/6f3ada18c670631ee8294c51b201f979d2f8932d/python3poembot/images/68747470733a2f2f692e6962622e636f2f3659584d4b53332f7261737062657272792d70692d6770696f2d6469616772616d2e706e67.png">
 
 On the bottom of the printer, you should see a sticker that lists wires named “GND,” “RX,” and “TX.” These wires need to be plugged into the three pins on the right column Raspberry Pi after the two 5V pins.
 
 See image below.
 
-<img src="https://i.ibb.co/NNtF675/IMG-6841.jpg" width="500"/>
+<img src="https://github.com/prattpi/piprojects4libraries/blob/6f3ada18c670631ee8294c51b201f979d2f8932d/python3poembot/images/68747470733a2f2f692e6962622e636f2f4e4e74463637352f494d472d363834312e6a7067.jpeg" width="500"/>
 
 Next, we will plug in the Keyestudio Button Switch. To start, plug in three jumper wires to the button.
 
@@ -51,11 +51,11 @@ Start plugging in the jumper wires connected to the button to the Raspberry Pi a
 | V+ (power positive pin)   | 3.3v (Pin 17)        |
 | S (signal pin)   | GPIO23 (Pin 16)        |
 
-<img src="https://i.ibb.co/hBz88r4/unnamed.png" width="500"/>
+<img src="https://github.com/prattpi/piprojects4libraries/blob/6f3ada18c670631ee8294c51b201f979d2f8932d/python3poembot/images/68747470733a2f2f692e6962622e636f2f68427a383872342f756e6e616d65642e706e67.png" width="500"/>
 
 The Raspberry Pi should look like this:
 
-<img src="https://i.ibb.co/p384DSQ/IMG-7125.jpg" width="500"/>
+<img src="https://github.com/prattpi/piprojects4libraries/blob/6f3ada18c670631ee8294c51b201f979d2f8932d/python3poembot/images/68747470733a2f2f692e6962622e636f2f703338344453512f494d472d373132352e6a7067.jpeg" width="500"/>
 
 
 
@@ -67,13 +67,13 @@ Make sure that the printer’s power supply is unplugged.
 
 Hold the print button as you plug in the printer’s power supply, and the printer should print out a test page as shown below.
 
-<img src="https://i.ibb.co/X3z4kq1/IMG-6842.jpg" width="500"/>
+<img src="https://github.com/prattpi/piprojects4libraries/blob/6f3ada18c670631ee8294c51b201f979d2f8932d/python3poembot/images/68747470733a2f2f692e6962622e636f2f58337a346b71312f494d472d363834322e6a7067.jpeg" width="500"/>
 
 
 
 Now, boot up the Raspberry Pi by connecting it to its power supply, monitor via HDMI cable, keyboard, mouse, and ethernet cable.
 
-<img src="https://i.ibb.co/rmMfHtz/IMG-6852.jpg" width="700"/>
+<img src="https://github.com/prattpi/piprojects4libraries/blob/6f3ada18c670631ee8294c51b201f979d2f8932d/python3poembot/images/68747470733a2f2f692e6962622e636f2f726d4d6648747a2f494d472d363835322e6a7067.jpeg" width="700"/>
 
 ## Enable the Serial Interface
 
@@ -81,19 +81,19 @@ Open the Terminal and type `sudo raspi-config` and press enter.
 
 You should see the Terminal window change to look something like this:
 
-<img src="https://i.ibb.co/GnyKtyw/2022-02-24-152742-1920x1080-scrot.png" width="700"/>
+<img src="https://github.com/prattpi/piprojects4libraries/blob/6f3ada18c670631ee8294c51b201f979d2f8932d/python3poembot/images/68747470733a2f2f692e6962622e636f2f476e794b7479772f323032322d30322d32342d3135323734322d3139323078313038302d7363726f742e706e67.png" width="700"/>
 
 Use the arrow keys to move down and select 3 Interface Options. Press enter.
 
 Afterwards, move down and select P6 Serial Port. Refer to the image below.
 
-<img src="https://i.ibb.co/NKqywhS/2022-02-24-153043-1920x1080-scrot.png" width="700"/>
+<img src="https://github.com/prattpi/piprojects4libraries/blob/6f3ada18c670631ee8294c51b201f979d2f8932d/python3poembot/images/68747470733a2f2f692e6962622e636f2f4e4b71797768532f323032322d30322d32342d3135333034332d3139323078313038302d7363726f742e706e67.png" width="700"/>
 
 When prompted for a login shell, select No. 
 
 Afterwards, select Yes when prompted about enabling serial port hardware. Refer to the image below.
 
-<img src="https://i.ibb.co/Y0Bcnng/2022-02-24-153242-1920x1080-scrot.png" width="700"/>
+<img src="https://github.com/prattpi/piprojects4libraries/blob/6f3ada18c670631ee8294c51b201f979d2f8932d/python3poembot/images/68747470733a2f2f692e6962622e636f2f593042636e6e672f323032322d30322d32342d3135333234322d3139323078313038302d7363726f742e706e67.png" width="700"/>
 
 The interface should now state that the serial login shell has been disabled, and the serial interface has been enabled.
 
@@ -110,7 +110,7 @@ Next, type `echo -e “This is a test.\\n\\n\\n” > /dev/serial0`
 
 After pressing enter, the printer should print “This is a test.” as shown below.
 
-<img src="https://i.ibb.co/189YvCY/IMG-6845.jpg" width="500"/>
+<img src="https://github.com/prattpi/piprojects4libraries/blob/461e13859d0e9eb5d26f658f164cf4093721e7bc/python3poembot/images/68747470733a2f2f692e6962622e636f2f313839597643592f494d472d363834352e6a7067.jpeg" width="500"/>
 
 
 ## Install Updates and Drivers
@@ -161,7 +161,7 @@ It should print out the following message:
 
 Press the button, and the printer will print out a poem, as seen in the image below.
 
-<img src="https://i.ibb.co/WxwZCkm/IMG-6880.jpg" width="500"/>
+<img src="https://github.com/prattpi/piprojects4libraries/blob/461e13859d0e9eb5d26f658f164cf4093721e7bc/python3poembot/images/68747470733a2f2f692e6962622e636f2f5778775a436b6d2f494d472d363838302e6a7067.jpeg" width="500"/>
 
 The contents of the CSV file (accessible by going to the folder icon in the top bar, navigating to piprojects4libraries and into the python3poembot folder) can be changed to fit your interests or the code can point to a different CSV file you may already have.
 
