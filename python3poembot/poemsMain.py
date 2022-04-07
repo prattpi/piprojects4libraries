@@ -15,7 +15,7 @@ import RPi.GPIO as GPIO
 import subprocess, time, socket, csv, textwrap, random
 
 from Adafruit_Thermal import *
-
+# change baud rate in the line below (19200) if your printer's baud rate is different
 printer = Adafruit_Thermal("/dev/serial0", 19200, timeout=5)
 
 # printer and button set up
