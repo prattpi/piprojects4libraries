@@ -29,10 +29,10 @@ def send():
     global count
     
     # Add your Google Forms URL, and make sure that it ends with formResponse
-    url = 'https://docs.google.com/forms/d/e/1FAIpQLScTGalasn1QsviEU7tinTbpN-ZXaFncP9O2mWwP-f9SOfZpaw/formResponse'
+    url = 'https://docs.google.com/forms/d/e/YOURFORMIDHERE/formResponse'
         
     # Add the corresponding entry ID for your form
-    form_data = {'entry.2119768208': count}
+    form_data = {'entry.XXXXXXXXXX': count}
         
     # This sends the data to the Google Form
     x = requests.post(url, data = form_data)
