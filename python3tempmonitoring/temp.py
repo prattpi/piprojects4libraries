@@ -21,10 +21,10 @@ while True:
         humidity = dhtDevice.humidity
 
         # Replace the URL below with your Google Forms URL, and make sure that it ends with formResponse
-        url = 'https://docs.google.com/forms/d/e/1FAIpQLSe3h6V2dTgCezwEJAwMSsgQ2dJvZfXQrGVkM6p5sQzcE_sK7g/formResponse'
+        url = 'https://docs.google.com/forms/d/e/YOURFORMIDHERE/formResponse'
         
         # Replace the three entry IDs with the corresponding entry IDs for your form
-        form_data = {'entry.363913385': temperature_f, 'entry.711039572': temperature_c, 'entry.462028969': humidity}
+        form_data = {'entry.XXXXXXXXXX': temperature_f, 'entry.XXXXXXXXXX': temperature_c, 'entry.XXXXXXXXXX': humidity}
         
         # This sends the data to the Google Form
         x = requests.post(url, data = form_data)
