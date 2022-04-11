@@ -60,71 +60,13 @@ Afterwards, click on the Responses tab and the Google Sheets icon to create a sp
 <img src = "https://github.com/prattpi/piprojects4libraries/blob/540c8d9182b4baca08a675582f91e664bf1711da/python3gatecounter/images/google_form2.png" width=600>
 
 # Creating the Python File
-Go to the Raspberry Pi icon in the top left corner, and open an IDE in the Programming dropdown, such as Thonny Python IDE or Geany. 
+Go to the Raspberry Pi icon in the top left corner, and open an IDE in the Programming dropdown, such as Thonny Python IDE or Geany. Type the following: 
 
-Copy and paste the following code into a new file:
+`git clone https://github.com/prattpi/piprojects4libraries`
 
-      import schedule
-      import RPi.GPIO as GPIO
-      import time
-      from datetime import datetime
-      import requests`
-      
-      # sensor pin in bcm mode 
-      sensor = 7
-      count = 0
+Next, type `cd piprojects4libraries/python3gatecounter`
 
-      GPIO.setmode(GPIO.BCM)
-      GPIO.setup(sensor, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
-
-      # Callback for rising or falling pin state
-      def motion_callback(pin):
-        global count
-
-        # Get current state, 1 is motion, 0 is no motion
-        current_state = GPIO.input(pin)
-  
-        if current_state == 1:
-          count += 1
-          print ("Motion detected at " + datetime.now().strftime("%H:%M:%S") + ". The count is " + str(count))
-
-        # Set up interrupts
-        GPIO.add_event_detect(sensor, GPIO.BOTH, callback=motion_callback) 
-
-        def send():
-          global count
-    
-          # Add your Google Forms URL, and make sure that it ends with formResponse
-          url = 'https://docs.google.com/forms/d/e/FORMID/formResponse'
-        
-          # Add the corresponding entry ID for your form
-          form_data = {'entry.#########: count}
-        
-          # This sends the data to the Google Form
-          x = requests.post(url, data = form_data)
-    
-          print ("Data sent to Google Form.")
-    
-          count = 0
-    
-      # [minutes] can be replaced with [seconds] or [hour]
-      # go to pypi.org/project/schedule/ to learn more about customizing how often data is sent
-      schedule.every(1).minutes.do(send)
-
-      while True:
-       schedule.run_pending()
-       time.sleep(1)
-
-      # Start looping forever waiting for sensor interrupt
-      try:  
-        while True : pass  
-      except:
-        print ('Exception, quitting...')
-        GPIO.remove_event_detect(sensor)
-        GPIO.cleanup()
-
-Save this file as `gatecounter.py` on your desktop.
-
+Then type `python3 gatecounter.py` to run the program.
 
 ## Editing the Python File
 
