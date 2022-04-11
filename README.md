@@ -5,7 +5,7 @@ To recreate these projects, you can git clone the entire repo:
 
 `git clone https://github.com/prattpi/piprojects4libraries`
 
-Then go into the project you want to recreate and follow that ReadMe for further instruction. 
+Then go into the project folder you want to recreate and follow that ReadMe for further instruction. 
 
 ### Digital Signage Display 
 Using the Raspberry Pi to run Screenly Open Source Edition (OSE), a free digital signage software
