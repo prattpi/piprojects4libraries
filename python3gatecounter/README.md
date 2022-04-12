@@ -59,7 +59,7 @@ The input section for each question can simply be the short answer text option. 
 Afterwards, click on the Responses tab and the Google Sheets icon to create a spreadsheet of responses.
 <img src = "https://github.com/prattpi/piprojects4libraries/blob/540c8d9182b4baca08a675582f91e664bf1711da/python3gatecounter/images/google_form2.png" width=600>
 
-# Creating the Python File
+# Cloning the Python File
 Go to the Raspberry Pi icon in the top left corner, and open an IDE in the Programming dropdown, such as Thonny Python IDE or Geany. Type the following: 
 
 `git clone https://github.com/prattpi/piprojects4libraries`
