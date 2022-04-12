@@ -99,7 +99,7 @@ Navigate to the terminal on your Raspberry Pi, and type the following:
 This will install a Python scheduler that will make it possible to send data to the Google Form after a specific time interval.
 
 ## Run the Program
-Go back to the Terminal, and type `cd Desktop` to navigate to directories in your desktop. Afterwards, type the following and press enter:
+Go back to the Terminal, and type `cd piprojects4libraries/python3gatecounter` to navigate to the project in your directories. Afterwards, type the following and press enter:
 
 `python3 gatecounter.py`
 
@@ -137,7 +137,7 @@ It is also possible to have the program run as soon as the system has been boote
 
 To accomplish this, we will be adding a new job for Crontab, a job scheduler, to run upon reboot.
 
-To begin, open the `gatecounter.py file` from your Desktop and add `time.sleep(15)` under `import requests` found on line 5 like so:
+To begin, open the `gatecounter.py` file and add `time.sleep(15)` under `import requests` found on line 5 like so:
 
 <img src = "https://github.com/prattpi/piprojects4libraries/blob/2c4f152a020c4b55a1e1431c956e75cb30c87485/python3gatecounter/images/screenshot_python3.png" width = 100%>
 
@@ -153,9 +153,9 @@ Your Terminal window should now look something like this:
 
 Scroll down to the very bottom of the file (use your keyboard arrow buttons to scroll in the terminal), and type the following line:
 
-`@reboot /usr/bin/python3 /home/pi/Desktop/gatecounter.py`
+`@reboot /usr/bin/python3 /home/pi/piprojects4libraries/python3gatecounter/gatecounter.py`
 
-Refer to the screenshot below.
+Refer to the screenshot below (*please note that the filepath included in the screenshot below is different than the filepath you will enter here).
 
 <img src = "https://github.com/prattpi/piprojects4libraries/blob/6a8b9fce75ab4518d36b1c1301da085b89de1b90/python3gatecounter/images/screenshot_terminal3.png" width=800>
 
@@ -165,7 +165,7 @@ To view what you have written, type `crontab -l`, and to edit what you wrote, ty
 
 To test your scheduled job, type `sudo reboot` to reboot the system. About 15 seconds after the Pi has rebooted, the Pi will start recording gate counting data and send that data to the Google Form.
 
-If you would like to stop the automated gate counting, return to the editor via `crontab -e` and add a `#` in front of `@reboot /usr/bin/python3 /home/pi/Desktop/gatecounter.py`. Refer to the screenshot below.
+If you would like to stop the automated gate counting, return to the editor via `crontab -e` and add a `#` in front of `@reboot /usr/bin/python3 /home/pi/piprojects4libraries/python3gatecounter/gatecounter.py`. Refer to the screenshot below.
 
 <img src = "https://github.com/prattpi/piprojects4libraries/blob/ff4f68bfd9f945a74dbd6f00b43c2fd5ce739f56/python3gatecounter/images/screenshot_terminal4.png" width = 800>
 
