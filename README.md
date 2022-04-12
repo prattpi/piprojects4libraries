@@ -1,5 +1,8 @@
 # piprojects4libraries
-Here you'll find a collection of Raspberry Pi Projects for use in public/academic/special libraries, as related to https://doi.org/10.1108/LHT-11-2021-0378
+Here you'll find a collection of Raspberry Pi Projects for use in public/academic/special libraries, as related to https://doi.org/10.1108/LHT-11-2021-0378. These projects were collected and inspired by interviewing librarians about their use of single-board computers outside of the makerspace context. Many of these low-cost projects were used to solve problems or prototype solutions for library needs. The goal of this work is to provide documentation for projects similar to the ones discussed by the librarians we interviewed in an effort to make these solutions more accessible to the broader library community. 
+
+
+
 
 To recreate these projects, you can git clone the entire repo:
 
