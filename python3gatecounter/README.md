@@ -83,7 +83,7 @@ In the element inspection window, press Control+F to open the find window. In th
 
 Switch back to your Python IDE, and on line 32, replace the URL value with your Google Form URL. Make sure that the URL ends in `formResponse` insead of `viewform`. 
 
-On line 35, replace the entry ID variable (entry.#########) with the entry ID found by inspecting the webpage.
+On line 35, replace the entry ID variable (entry.XXXXXXXXXX) with the entry ID found by inspecting the webpage.
 
 Refer to the screenshot below for an example.
 
