@@ -83,7 +83,7 @@ Afterwards, type the following commands and press enter to install the CircuitPy
 
 
 
-## Creating the Python File
+## Cloning the Python File
 
 Go to the Raspberry Pi icon in the top left corner, and open an IDE in the Programming dropdown, such as Thonny Python IDE or Geany. Type the following:
 
