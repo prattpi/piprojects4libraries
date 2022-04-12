@@ -118,7 +118,7 @@ Afterwards, save the file.
 
 ## Run the Program
 
-Go back to the Terminal, and type `cd Desktop` to navigate to directories in your desktop. Afterwards, type the following and press enter:
+Go back to the Terminal, and type `cd piprojects4libraries/python3tempmonitoring` to navigate to the project in your directories. Afterwards, type the following and press enter:
 
 `python3 temp.py`
 
@@ -144,7 +144,7 @@ It is also possible to have the program run as soon as the system has been boote
 
 To accomplish this, we will be adding a new job for Crontab, a job scheduler, to run upon reboot.
 
-To begin, open the `temp.py` file from your Desktop and add `time.sleep(15)` under import requests found on line 7 like so:
+To begin, open the `temp.py` file and add `time.sleep(15)` under import requests found on line 7 like so:
 
 <img src = "https://github.com/prattpi/piprojects4libraries/blob/fb6ac8155f7ca43130ce4b55c41c2f2d7e6689d6/python3tempmonitoring/images/Screen%20Shot%202022-04-03%20at%206.28.15%20PM.png">
 
@@ -160,9 +160,9 @@ Your Terminal window should now look something like this:
 
 Scroll down to the very bottom of the file (use your keyboard arrow buttons to scroll in the terminal), and type the following line:
 
-`@reboot /usr/bin/python3 /home/pi/Desktop/temp.py`
+`@reboot /usr/bin/python3 /home/pi/piprojects4libraries/python3tempmonitoring/temp.py`
 
-Refer to the screenshot below.
+Refer to the screenshot below (*please note that the filepath included in the screenshot below is different than the filepath you will enter here).
 
 <img src = "https://github.com/prattpi/piprojects4libraries/blob/fb6ac8155f7ca43130ce4b55c41c2f2d7e6689d6/python3tempmonitoring/images/Screen%20Shot%202022-04-03%20at%206.28.42%20PM.png" width = 800>
 
@@ -172,7 +172,7 @@ To view what you have written, type `crontab -l`, and to edit what you wrote, ty
 
 To test your scheduled job, type sudo reboot to reboot the system. About 15 seconds after the Pi has rebooted, you should be able to see more data sent to your Google Form and Google Sheets documents.
 
-If you would like to stop the automated temperature readings, return to the editor via `crontab -e` and add a `#` in front of `@reboot /usr/bin/python3 /home/pi/Desktop/temp.py`. Refer to the screenshot below.
+If you would like to stop the automated temperature readings, return to the editor via `crontab -e` and add a `#` in front of `@reboot /usr/bin/python3 /home/pi/piprojects4libraries/python3tempmonitoring/temp.py`. Refer to the screenshot below.
 
 <img src = "https://github.com/prattpi/piprojects4libraries/blob/fb6ac8155f7ca43130ce4b55c41c2f2d7e6689d6/python3tempmonitoring/images/Screen%20Shot%202022-04-03%20at%206.28.48%20PM.png" width = 800>
 
