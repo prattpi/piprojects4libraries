@@ -51,7 +51,7 @@ Start plugging in the jumper wires connected to the button to the Raspberry Pi a
 | V+ (power positive pin)   | 3.3v (Pin 17)        |
 | S (signal pin)   | GPIO23 (Pin 16)        |
 
-<img src="https://github.com/prattpi/piprojects4libraries/blob/8897ebdcd1ff981029cb09a2b27803c40605e747/python3poembot/images/68747470733a2f2f692e6962622e636f2f3659584d4b53332f7261737062657272792d70692d6770696f2d6469616772616d2e706e67.png"/>
+<img src="https://github.com/prattpi/piprojects4libraries/blob/4d1f9872904ec48b1d180b7bc84433a942093a49/python3poembot/images/pinout.png"/>
 
 The Raspberry Pi should look like this:
 
