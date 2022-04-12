@@ -110,7 +110,7 @@ Switch back to your Python IDE, and on line 24, replace the URL value with your 
 
 <img src = "https://github.com/prattpi/piprojects4libraries/blob/fb6ac8155f7ca43130ce4b55c41c2f2d7e6689d6/python3tempmonitoring/images/Screen%20Shot%202022-04-03%20at%206.26.59%20PM.png">
 
-On line 27, replace the three entry IDs (entry.#########) with the three entry IDs found by inspecting the webpage.
+On line 27, replace the three entry IDs (entry.XXXXXXXXXX) with the three entry IDs found by inspecting the webpage.
 
 Afterwards, save the file.
 
