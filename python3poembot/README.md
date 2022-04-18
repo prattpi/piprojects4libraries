@@ -155,11 +155,11 @@ Next, type `cd piprojects4libraries/python3poembot`
 
 Type `python3 poemsMain.py` to run the program.
 
-It should print out the following message:
+It should print out the following message (there may be a delay before the message prints):
 
 `Hello! Ready to print Golden Treasury poems.`
 
-Press the button, and the printer will print out a poem, as seen in the image below.
+Press the Keyestudio Button Switch, and the printer will print out a poem, as seen in the image below.
 
 <img src="https://github.com/prattpi/piprojects4libraries/blob/461e13859d0e9eb5d26f658f164cf4093721e7bc/python3poembot/images/68747470733a2f2f692e6962622e636f2f5778775a436b6d2f494d472d363838302e6a7067.jpeg" width="500"/>
 
