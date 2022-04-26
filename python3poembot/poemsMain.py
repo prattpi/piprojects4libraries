@@ -92,7 +92,7 @@ with open('goldenTreasuryPoems.csv') as csvPoems:
 # Processor load is heavy at startup; 
 # this delays starting the loop for a bit 
 for x in range(30):
-    print(“.”)
+    print(".")
     time.sleep(1)
 
 # Print IP address if Pi connects to a network 
