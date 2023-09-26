@@ -43,6 +43,10 @@ Now, your URL of choice will be displayed when the browser is first opened, and 
 ## Setting up Kiosk Mode
 Kiosk mode refers to having your website locked onto the screen, in that the user will not be able to access anything but your website of choice.
 
+For the following steps you will be using the Terminal to type in (or copy in) text commands. 
+
+Press Ctrl+Alt+F1 to access the Terminal. From there, type the following command:
+
 First, install updates using the following command:
 
 `sudo apt-get update && sudo apt-get upgrade -y`
