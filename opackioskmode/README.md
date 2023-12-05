@@ -15,10 +15,12 @@ This tutorial will teach you how to set your library catalog website as the home
 * Keyboard
 
 <img src = "https://github.com/prattpi/piprojects4libraries/blob/50418bf8bfc01dc47a2808be14ea578a017f65c3/opackioskmode/images/raspberry%20pi%20equipment%20with%20labels.jpg" width = 600>
-## Start up the Pi
-Connect the Raspberry Pi power supply, HDMI cable, Ethernet cable, keyboard, and mouse.
 
-<img src = "https://github.com/prattpi/piprojects4libraries/blob/3142d05c5be1dae820009f9de47c56c26c14c6ac/opackioskmode/images/Picture1.png" width = 600>
+## Imaging the Pi
+Insert your SD card into the SD Card reader. Plug the SD Card reader into your secondary computer. Using your secondary computer open <a href="https://www.raspberrypi.com/software/">the Raspberry Pi Imager</a> and install the ‘recommended version’. In this case, we are using the <b>Raspberry Pi OS 64-bit version.</b>  
+
+Choose the storage, in this case, it should be the SD card you are using. Click on ‘Write’ and wait for your SD card to be reimaged with Raspberry Pi OS.
+
 
 ## Open the Web Browser
 Click the second icon on the top bar to open the web browser.
