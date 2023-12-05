@@ -14,7 +14,7 @@ This tutorial will teach you how to set your library catalog website as the home
 * Mouse
 * Keyboard
 
-<img src = "https://github.com/prattpi/piprojects4libraries/blob/50418bf8bfc01dc47a2808be14ea578a017f65c3/opackioskmode/images/raspberry%20pi%20equipment%20with%20labels.jpg" width = 600>
+<img src = "https://github.com/prattpi/piprojects4libraries/blob/50418bf8bfc01dc47a2808be14ea578a017f65c3/opackioskmode/images/raspberry%20pi%20equipment%20with%20labels.jpg" width = 800>
 
 ## Imaging the Pi
 Insert your SD card into the SD Card reader. Plug the SD Card reader into your secondary computer. Using your secondary computer open <a href="https://www.raspberrypi.com/software/">the Raspberry Pi Imager</a> and install the ‘recommended version’. In this case, we are using the <b>Raspberry Pi OS 64-bit version.</b>  
@@ -27,7 +27,7 @@ Once you are done imaging your SD card with the Raspberry Pi OS, it is time to s
 
 Check for a blinking red light on your Pi to ensure it is being supplied with power. To check for a working internet connection, you can just look for a yellow blinking light inside the port for the ethernet cable.
 
-<img src = "https://github.com/prattpi/piprojects4libraries/blob/2503b04189228741ab78f64ccffd31588f23f129/opackioskmode/images/Pi%20Imager1.jpg" width = 300> <img src = "https://github.com/prattpi/piprojects4libraries/blob/2503b04189228741ab78f64ccffd31588f23f129/opackioskmode/images/Pi%20Imager%202.jpg" width = 300>
+<img src = "https://github.com/prattpi/piprojects4libraries/blob/2503b04189228741ab78f64ccffd31588f23f129/opackioskmode/images/Pi%20Imager1.jpg" width = 400> <img src = "https://github.com/prattpi/piprojects4libraries/blob/2503b04189228741ab78f64ccffd31588f23f129/opackioskmode/images/Pi%20Imager%202.jpg" width = 400>
 
 
 Click the second icon on the top bar to open the web browser.
