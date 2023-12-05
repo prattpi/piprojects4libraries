@@ -34,48 +34,37 @@ Check for a blinking red light on your Pi to ensure it is being supplied with po
 
 <img src = "https://github.com/prattpi/piprojects4libraries/blob/835685013bb162709ab867d1b34fb55faaea0c22/opackioskmode/images/Yellow%20Light%20for%20internet.jpg" width = 600>
 
+## Starting up the browser
 
-Click the second icon on the top bar to open the web browser.
+Once you have successfully booted your Raspberry Pi, you will be given the option to choose your browser of choice. Raspberry Pi comes with two in-built options - Chromium and Firefox. <b>Choose Firefox as your choice of the default browser.</b>  
 
-<img src = "https://github.com/prattpi/piprojects4libraries/blob/8e71e3e2654c6f4884814f1f71bf8b95884c239f/opackioskmode/images/web_browser_chromium.png" width = 600>
+Go to the Settings menu in Firefox as displayed here:
+
+Navigate to the ‘Home’ option
+
+Choose ‘Custom URL’ here and add the address of your desired webpage. 
 
 
-Once Chromium is open, click the three dots on the right of the browser and click “Settings.”
+## Set up Kiosk Mode in Firefox
 
-<img src = "https://github.com/prattpi/piprojects4libraries/blob/e30ff2a161c58832691ac42211f9026af88f2f0b/opackioskmode/images/chromium_setting.png" width = 600>
-
-Click on “Appearance” in the left sidebar and toggle “Show home button.” Afterwards, add your URL of choice in the space provided.
-
-<img src = "https://github.com/prattpi/piprojects4libraries/blob/5bd9ab3eef9d5f7099e3b21e6dc42f0895985a98/opackioskmode/images/appearance.png" width = 800>
-
-Next, click on “On Startup” on the left sidebar and click “Open a specific page or set of pages,” and choose “Add a new page,” and add your URL.
-
-<img src = "https://github.com/prattpi/piprojects4libraries/blob/ab5c294ddf2218ea84f41d38ae4403a77d4c95d0/opackioskmode/images/appearance2.png" width = 800>
-
-Now, your URL of choice will be displayed when the browser is first opened, and can also be accessed easily by clicking the Home icon next to the Refresh icon.
-
-<img src = "https://github.com/prattpi/piprojects4libraries/blob/ab5c294ddf2218ea84f41d38ae4403a77d4c95d0/opackioskmode/images/2022-02-06-114501_1920x1080_scrot.png" width = 800>
-
-## Setting up Kiosk Mode
 Kiosk mode refers to having your website locked onto the screen, in that the user will not be able to access anything but your website of choice.
 
-For the following steps you will be using the Terminal to type in (or copy in) text commands. 
-
-Press Ctrl+Alt+F1 to access the Terminal. From there, type the following command:
-
-First, install updates using the following command:
+For the following steps you will be using the Terminal to type in (or copy in) text commands.
+Press Ctrl+Alt+F1 to access the Terminal or the Terminal icon on the navigation bar at the top. From there, type the following command to install updates:
 
 `sudo apt-get update && sudo apt-get upgrade -y`
 
-Next, we will make sure that the Chromium browser is the latest version. Type the following command, and enter yes when prompted:
+Next, we will make sure that the Firefox browser is the latest version. Type the following command, and enter yes when prompted:
 
-`sudo apt-get install chromium x11-xserver-utils`
+`sudo apt-get install firefox x11-xserver-utils`
+
+This command is not needed as in this case, Firefox is already installed.
 
 Next, edit the lightdm.conf file by typing the following command:
 
 `sudo nano /etc/lightdm/lightdm.conf`
 
-In the lightdm.conf file, use the arrow keys to go to `[Seat:*]`. You should find #xserver-command=X six lines below it. Change this line to:
+In the lightdm.conf file, use the arrow keys to go to [Seat:*]. You should find #xserver-command=X six lines below it. Change this line to:
 
 `xserver-command=X -s 0 -dpms`
 
@@ -86,6 +75,8 @@ Refer to the image below.
 Press Ctrl+X, press y, and press enter to save the file.
 
 Next, type the following command:
+
+<b>Please note</b> that the following command is used to hide the mouse pointer on the screen. In case, you do not want your mouse pointer to blink upon movement, feel free to skip this command. 
 
 `sudo apt-get install unclutter`
 
@@ -98,25 +89,23 @@ Add the following lines to the file:
     @xset s off 
     @xset -dpms 
     @xset s noblank 
-    @chromium-browser --kiosk --incognito -disable-translate --app=YOUR URL HERE
+    @firefox-browser --kiosk --incognito -disable-translate --app=YOUR URL HERE
     @unclutter -idle 0
 
-Refer to the image below.
-
-<img src = "https://github.com/prattpi/piprojects4libraries/blob/0cf942e1b5a56412d306427c5323415a0248f255/opackioskmode/images/screenshot_terminal2.png" width = 800>
+<b> Again, note that the last line '@unclutter -idle 0` is optional and upto you</b>
 
 Press Ctrl+X, press y, and press enter to save the file.
 
 Type `sudo reboot` to restart your Pi. After a few moments, the monitor should display the URL you inputted.
 
-<img src = "https://github.com/prattpi/piprojects4libraries/blob/0cf942e1b5a56412d306427c5323415a0248f255/opackioskmode/images/IMG_6569.JPG" width = 800>
+<img src = "https://github.com/prattpi/piprojects4libraries/blob/a1799bd12b80ec146764168a3b831837611b0cd6/opackioskmode/images/Firefox%20Pratt%20Library%20Setup.jpg" width = 800>
 
 ## Returning to the Raspberry Pi Interface
 Follow the steps below to access the Raspberry Pi interface by exiting kiosk mode.
 
 Press Ctrl+Alt+F1 to access the Terminal. From there, type the following command:
 
-`sudo killall /usr/lib/chromium-browser/chromium-browser-v7`
+`sudo killall /usr/lib/chromium-browser/firefox-browser-v7`
 
 Afterwards, press Ctrl+Alt+F7 to access the Raspberry Pi interface.
 
@@ -131,11 +120,13 @@ If you would like to stop booting up in kiosk mode, access the Terminal and type
 
 This will take you back to the autostart file. 
 
-From there, comment out the five lines that were added by adding a pound sign (#) in front of each line. 
+From there, comment out the five lines that were added by adding a pound sign (#) in front of each line that you added. 
 
-Refer to the image below.
-
-<img src = "https://github.com/prattpi/piprojects4libraries/blob/e891054d4c85ad2a75d82534549f6ffd25f1519c/opackioskmode/images/screenshot_terminal3.png" width = 800>
+    #@xset s off 
+    #@xset -dpms 
+    #@xset s noblank 
+    #@firefox-browser --kiosk --incognito -disable-translate --app=YOUR URL HERE
+    #@unclutter -idle 0
 
 Press Ctrl+X, press y, and press enter to save the file.
 
