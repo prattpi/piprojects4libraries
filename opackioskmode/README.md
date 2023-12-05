@@ -19,10 +19,16 @@ This tutorial will teach you how to set your library catalog website as the home
 ## Imaging the Pi
 Insert your SD card into the SD Card reader. Plug the SD Card reader into your secondary computer. Using your secondary computer open <a href="https://www.raspberrypi.com/software/">the Raspberry Pi Imager</a> and install the ‘recommended version’. In this case, we are using the <b>Raspberry Pi OS 64-bit version.</b>  
 
-Choose the storage, in this case, it should be the SD card you are using. Click on ‘Write’ and wait for your SD card to be reimaged with Raspberry Pi OS.
+Choose the storage, in this case, it should be the SD card you use. Click on ‘Write’ and wait for your SD card to be reimaged with Raspberry Pi OS.
+<b>Note:</b> For this project, it is recommended to work with Firefox Browser, although Chromium is preinstalled, it is rather slow when run in Kiosk mode. 
 
+## Setting up your Raspberry Pi
+Once you are done imaging your SD card with the Raspberry Pi OS, it is time to start up the Pi. Connect the Raspberry Pi Power Supply to the Pi, and insert the SD card into it. Connect the Pi with the Monitor using the HDMI cable. Connect the mouse and keyboard to the Pi. Plug in the Ethernet cable to a working port and connect it to the Pi to access the internet.
 
-## Open the Web Browser
+Check for a blinking red light on your Pi to ensure it is being supplied with power. To check for a working internet connection, you can just look for a yellow blinking light inside the port for the ethernet cable.
+<img src = "https://github.com/prattpi/piprojects4libraries/blob/2503b04189228741ab78f64ccffd31588f23f129/opackioskmode/images/Pi%20Imager1.jpg" width = 600>
+<img src = "https://github.com/prattpi/piprojects4libraries/blob/2503b04189228741ab78f64ccffd31588f23f129/opackioskmode/images/Pi%20Imager%202.jpg" width = 600>
+
 Click the second icon on the top bar to open the web browser.
 
 <img src = "https://github.com/prattpi/piprojects4libraries/blob/8e71e3e2654c6f4884814f1f71bf8b95884c239f/opackioskmode/images/web_browser_chromium.png" width = 600>
