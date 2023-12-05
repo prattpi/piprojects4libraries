@@ -23,15 +23,9 @@ Choose the storage, in this case, it should be the SD card you use. Click on ‘
 
 <b>Note:</b> For this project, it is recommended to work with Firefox Browser, although Chromium is preinstalled, it is rather slow when run in Kiosk mode. 
 
-## Setting up your Raspberry Pi
-Once you are done imaging your SD card with the Raspberry Pi OS, it is time to start up the Pi. Connect the Raspberry Pi Power Supply to the Pi, and insert the SD card into it. Connect the Pi with the Monitor using the HDMI cable. Connect the mouse and keyboard to the Pi. Plug in the Ethernet cable to a working port and connect it to the Pi to access the internet.
-
-Check for a blinking red light on your Pi to ensure it is being supplied with power. To check for a working internet connection, you can just look for a yellow blinking light inside the port for the ethernet cable.
-
 <img src = "https://github.com/prattpi/piprojects4libraries/blob/2503b04189228741ab78f64ccffd31588f23f129/opackioskmode/images/Pi%20Imager1.jpg" width = 400> <img src = "https://github.com/prattpi/piprojects4libraries/blob/2503b04189228741ab78f64ccffd31588f23f129/opackioskmode/images/Pi%20Imager%202.jpg" width = 400>
 
 ## Setting up your Raspberry Pi
-
 Once you are done imaging your SD card with the Raspberry Pi OS, it is time to start up the Pi. Connect the Raspberry Pi Power Supply to the Pi, and insert the SD card into it. Connect the Pi with the Monitor using the HDMI cable. Connect the mouse and keyboard to the Pi. Plug in the Ethernet cable to a working port and connect it to the Pi to access the internet.
 
 Check for a blinking red light on your Pi to ensure it is being supplied with power. To check for a working internet connection, look for a yellow blinking light inside the port for the ethernet cable.
