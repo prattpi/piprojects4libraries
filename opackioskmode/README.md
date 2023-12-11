@@ -92,7 +92,7 @@ Add the following lines to the file:
     @firefox-browser --kiosk --incognito -disable-translate --app=YOUR URL HERE
     @unclutter -idle 0
 
-<b> Again, note that the last line '@unclutter -idle 0` is optional and upto you</b>
+<b> Again, note that the last line `@unclutter -idle 0` is optional and upto you</b>
 
 Press Ctrl+X, press y, and press enter to save the file.
 
