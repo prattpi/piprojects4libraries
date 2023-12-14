@@ -95,11 +95,17 @@ Add the following lines to the file:
     @firefox-browser --kiosk --incognito -disable-translate --app=YOUR URL HERE
     @unclutter -idle 0
 
+<b> For Firefox ESR users, copy and paste this code instead:
+
+ @xset s off 
+    @xset -dpms 
+    @xset s noblank 
+    @firefox-esr --kiosk --incognito -disable-translate --app=YOUR URL HERE
+    @unclutter -idle 0
+
 <b> Again, note that the last line `@unclutter -idle 0` is optional and upto you</b>
 
 Press Ctrl+X, press y, and press enter to save the file.
-
-
 
 Type `sudo reboot` to restart your Pi. After a few moments, the monitor should display the URL you inputted.
 
@@ -110,7 +116,7 @@ Follow the steps below to access the Raspberry Pi interface by exiting kiosk mod
 
 Press Ctrl+Alt+F1 to access the Terminal. From there, type the following command:
 
-`sudo killall /usr/lib/chromium-browser/firefox-browser-v7`
+`sudo killall /usr/lib/firefox-browser-v7`
 
 Afterwards, press Ctrl+Alt+F7 to access the Raspberry Pi interface.
 
@@ -131,6 +137,14 @@ From there, comment out the five lines that were added by adding a pound sign (#
     #@xset -dpms 
     #@xset s noblank 
     #@firefox-browser --kiosk --incognito -disable-translate --app=YOUR URL HERE
+    #@unclutter -idle 0
+
+<b> For Firefox ESR users, this is how it should look: </b>
+
+ #@xset s off 
+    #@xset -dpms 
+    #@xset s noblank 
+    #@firefox-esr --kiosk --incognito -disable-translate --app=YOUR URL HERE
     #@unclutter -idle 0
 
 Press Ctrl+X, press y, and press enter to save the file.
