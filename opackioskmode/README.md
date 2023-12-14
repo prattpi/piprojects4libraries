@@ -40,7 +40,7 @@ Once you have successfully booted your Raspberry Pi, you will be given the optio
 
 Go to the Settings menu in Firefox as displayed here:
 
-<img src = "https:https://github.com/prattpi/piprojects4libraries/blob/5e5aa9c6d2f10e40d9bc7ee754d593935d269217/opackioskmode/images/customurlset1.png" width = 600>
+<img src = "https://github.com/prattpi/piprojects4libraries/blob/5e5aa9c6d2f10e40d9bc7ee754d593935d269217/opackioskmode/images/customurlset1.png" width = 600>
 
 Click on 'Manage more settings'.
 
