@@ -97,7 +97,7 @@ Add the following lines to the file:
 
 <b> For Firefox ESR users, copy and paste this code instead: </b>
 
- @xset s off 
+    @xset s off 
     @xset -dpms 
     @xset s noblank 
     @firefox-esr --kiosk --incognito -disable-translate --app=YOUR URL HERE
