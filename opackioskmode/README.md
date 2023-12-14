@@ -40,17 +40,23 @@ Once you have successfully booted your Raspberry Pi, you will be given the optio
 
 Go to the Settings menu in Firefox as displayed here:
 
+<img src = "https:https://github.com/prattpi/piprojects4libraries/blob/5e5aa9c6d2f10e40d9bc7ee754d593935d269217/opackioskmode/images/customurlset1.png" width = 600>
+
+Click on 'Manage more settings'.
+
 Navigate to the ‘Home’ option
+
+<img src = "https://github.com/prattpi/piprojects4libraries/blob/5e5aa9c6d2f10e40d9bc7ee754d593935d269217/opackioskmode/images/customurlset2.png" width = 600>
 
 Choose ‘Custom URL’ here and add the address of your desired webpage.
 
-
+<img src = "https://github.com/prattpi/piprojects4libraries/blob/5e5aa9c6d2f10e40d9bc7ee754d593935d269217/opackioskmode/images/customurlset3.png" width = 600>
 
 ## Set up Kiosk Mode in Firefox
 
 Kiosk mode refers to having your website locked onto the screen, in that the user will not be able to access anything but your website of choice.
 
-For the following steps you will be using the Terminal to type in (or copy in) text commands.
+For the following steps, you will be using the Terminal to type in (or copy in) text commands.
 Press Ctrl+Alt+F1 to access the Terminal or the Terminal icon on the navigation bar at the top. From there, type the following command to install updates:
 
 `sudo apt-get update && sudo apt-get upgrade -y`
