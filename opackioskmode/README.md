@@ -38,9 +38,9 @@ Check for a blinking red light on your Pi to ensure it is being supplied with po
 
 Once you have successfully booted your Raspberry Pi, you will be given the option to choose your browser of choice. Raspberry Pi comes with two in-built options - Chromium and Firefox. <b>Choose Firefox as your choice of the default browser.</b>  
 
-Go to the Settings menu in Firefox as displayed here:
+Go to the Settings menu in Firefox as displayed here.
 
-<img src = "https://github.com/prattpi/piprojects4libraries/blob/5e5aa9c6d2f10e40d9bc7ee754d593935d269217/opackioskmode/images/customurlset1.png" width = 600>
+<img src = "https://github.com/prattpi/piprojects4libraries/blob/a30cb746f76ae0c766136cf7612751b5e1be0de2/opackioskmode/images/customurlset1.png" width = 600>
 
 Click on 'Manage more settings'.
 
