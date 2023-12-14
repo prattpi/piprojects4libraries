@@ -93,7 +93,9 @@ After, type the following command:
 
 `sudo nano /etc/xdg/lxsession/LXDE-pi/autostart`
 
-Add the following lines to the file:
+Add the following lines to the file and refer to the image below.
+
+<img src = "https://github.com/prattpi/piprojects4libraries/blob/cf45518db2886fca9d75ef62196c7d10ffa78f16/opackioskmode/images/firefox1.png" width = 800>
 
     @xset s off 
     @xset -dpms 
@@ -101,7 +103,9 @@ Add the following lines to the file:
     @firefox-browser --kiosk --incognito -disable-translate --app=YOUR URL HERE
     @unclutter -idle 0
 
-<b> For Firefox ESR users, copy and paste this code instead: </b>
+<b> For Firefox ESR users, copy and paste this code instead. </b>
+
+<img src = "https://github.com/prattpi/piprojects4libraries/blob/cf45518db2886fca9d75ef62196c7d10ffa78f16/opackioskmode/images/firefoxesr1.png" width = 800>
 
     @xset s off 
     @xset -dpms 
