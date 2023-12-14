@@ -42,7 +42,8 @@ Go to the Settings menu in Firefox as displayed here:
 
 Navigate to the ‘Home’ option
 
-Choose ‘Custom URL’ here and add the address of your desired webpage. 
+Choose ‘Custom URL’ here and add the address of your desired webpage.
+
 
 
 ## Set up Kiosk Mode in Firefox
@@ -54,11 +55,13 @@ Press Ctrl+Alt+F1 to access the Terminal or the Terminal icon on the navigation 
 
 `sudo apt-get update && sudo apt-get upgrade -y`
 
-Next, we will make sure that the Firefox browser is the latest version. Type the following command, and enter yes when prompted:
+## Using Firefox ESR - When to install Firefox ESR?
 
-`sudo apt-get install firefox x11-xserver-utils`
+Firefox ESR is available for lower versions of Raspberry Pi OS. These versions are not compatible with the Firefox browser that comes with the newer 64-bit version. If you are using the Legacy version of Raspberry Pi, it is recommended to install Firefox ESR. 
 
-This command is not needed as in this case, Firefox is already installed.
+Simply input this command into the terminal:
+
+`sudo apt-get install firefox-esr`
 
 Next, edit the lightdm.conf file by typing the following command:
 
@@ -95,6 +98,8 @@ Add the following lines to the file:
 <b> Again, note that the last line `@unclutter -idle 0` is optional and upto you</b>
 
 Press Ctrl+X, press y, and press enter to save the file.
+
+
 
 Type `sudo reboot` to restart your Pi. After a few moments, the monitor should display the URL you inputted.
 
