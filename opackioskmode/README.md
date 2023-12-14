@@ -141,7 +141,7 @@ From there, comment out the five lines that were added by adding a pound sign (#
 
 <b> For Firefox ESR users, this is how it should look: </b>
 
- #@xset s off 
+    #@xset s off 
     #@xset -dpms 
     #@xset s noblank 
     #@firefox-esr --kiosk --incognito -disable-translate --app=YOUR URL HERE
