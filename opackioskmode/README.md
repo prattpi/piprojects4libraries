@@ -95,7 +95,7 @@ Add the following lines to the file:
     @firefox-browser --kiosk --incognito -disable-translate --app=YOUR URL HERE
     @unclutter -idle 0
 
-<b> For Firefox ESR users, copy and paste this code instead: <b>
+<b> For Firefox ESR users, copy and paste this code instead: </b>
 
  @xset s off 
     @xset -dpms 
